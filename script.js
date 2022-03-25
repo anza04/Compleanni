@@ -13,7 +13,8 @@ var db = [
     {anno: 1999, mese: 01, giorno: 08, nome:"Elisa Meroni"}
 ];
 
-document.getElementById("cerca").addEventListener("click", ()=>{
+function CercaCompleanno()
+{
     var i=0;
     var trovato=0;
     var giornoIn = document.getElementById("giornoIn").value;
@@ -36,11 +37,11 @@ document.getElementById("cerca").addEventListener("click", ()=>{
     {
         document.getElementById("results").innerText="Il " + giornoIn+"/"+meseIn+"/"+annoIn + " non è il compleanno di nessuno ";
     }
-})
+}
 
 
 /*
-var vet = ["Federico Anzani 24/3/2004", "Leonardo Bargna 10/8/2004"];
+var vet = ["Federico Anzani 25/3/2004", "Leonardo Bargna 10/8/2004"];
 
 const oggi = new Date();
 var giorno = oggi.getDate();
@@ -58,5 +59,3 @@ for(i=0;i<vet.length;i++)
     }    
 }
 */
-
-    
